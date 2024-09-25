@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+    <!--tailwind & daisyUI link-->
+    
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="">
+    <nav class="bg-[#F9F7F3] py-6  sticky top-0 z-50 transition-colors duration-300 backdrop-blur-lg">
+        <div class="navbar max max-w-7xl mx-auto">
+            <div class="navbar-start">
+              <a id="blog-btn" class="btn btn-ghost text-xl bg-[#B4F461]">Blog</a>
+            </div>
+            <div class="navbar-center lg:flex">
+             <img src="/image/logo.png" alt="">
+             <h1>Donate Bangladesh</h1>
+            </div>
+            <div class="navbar-end">
+                <img src="/image/coin.png" alt="">
+                <h1><span id="main-balence">100000</span> BDT</h1>
+            </div>
+          </div>
+   
+      
+        <div class="flex justify-center mt-10 gap-10">
+            <button onclick="btnHandel(this)" id="donation-btn" class="btn">Donation</button>
+            <button onclick="btnHandel(this)" id="history-btn" class="btn">History</button>   
+        </div>
+      </nav>
+    <main>
+      <section id="donation-section" class="">
+        <!-- donation card 1-->
+        <div class="card card-side  max-w-7xl mx-auto mt-20 bg-base-100 shadow-xl">
+            <div class="lg:flex justify-center items-center">
+               
+                   <div class="p-10 lg:w-2/4  ">
+                    <img class="" src="/image/noakhali.png" alt="">
+                   </div>
+            
+                <div class="card-body lg:w-2/4">
+                  <div class="card-title">
+                    <img src="/image/coin.png" alt="">
+                    <h2><span id="total-amaunt">1000</span> BDT</h2>
+                  </div>
+                  <h2 class="text-2xl font-semibold">Donate for Flood at Noakhali, Bangladesh</h2>
+                  <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                  <div>
+                    <input id="donet-amaunt" type="text" placeholder="Type here" class="input input-bordered w-full max-w-5xl" />
+                  </div>
+                  <div class="card-actions justify-center ">
+                    <button id="add-amaunt-btn" class="btn btn-primary w-full max-w-5xl">Donate Now</button>
+                  </div>
+                </div>
+            </div>
+           
+          </div>
+
+          <!-- donation card 2-->
+          <div class="card card-side  max-w-7xl mx-auto mt-20 bg-base-100 shadow-xl">
+            <div class="lg:flex justify-center items-center">
+               
+                   <div class="p-10 lg:w-2/4  ">
+                    <img class="" src="/image/feni.png" alt="">
+                   </div>
+            
+                <div class="card-body lg:w-2/4">
+                  <div class="card-title">
+                    <img src="/image/coin.png" alt="">
+                    <h2><span id="fani-total-amaunt">0</span> BDT</h2>
+                  </div>
+                  <h2 class="text-2xl font-semibold">Donate for Flood at Noakhali, Bangladesh</h2>
+                  <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                  <div>
+                    <input id="fani-donet-amaunt" type="text" placeholder="Type here" class="input input-bordered w-full max-w-5xl" />
+                  </div>
+                  <div class="card-actions justify-center ">
+                    <button id="fani-add-amaunt-btn" class="btn btn-primary w-full max-w-5xl">Watch</button>
+                  </div>
+                </div>
+            </div>
+           
+          </div>
+
+          <!-- donation card 3-->
+        <div class="card card-side  max-w-7xl mx-auto mt-20 bg-base-200 shadow-xl">
+            <div class="lg:flex justify-center items-center">
+               
+                   <div class="p-10 lg:w-2/4  ">
+                    <img class="" src="/image/quota-protest.png" alt="">
+                   </div>
+            
+                <div class="card-body lg:w-2/4">
+                  <div class="card-title">
+                    <img src="/image/coin.png" alt="">
+                    <h2><span id="quota-total-amaunt">10</span> BDT</h2>
+                  </div>
+                  <h2 class="text-2xl font-semibold">Donate for Flood at Noakhali, Bangladesh</h2>
+                  <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                  <div>
+                    <input id="quota-donet-amaunt" type="text" placeholder="Type here" class="input input-bordered w-full max-w-5xl" />
+                  </div>
+                  <div class="card-actions justify-center ">
+                    <button id="quota-add-amaunt-btn" class="btn btn-primary w-full max-w-5xl">Watch</button>
+                  </div>
+                </div>
+            </div>
+           
+          </div>
+        </section>
+        <!---hestory section-->
+        <section id="history-section" class="hidden max-w-7xl mx-auto bg-slate-300 h-12 my-10">
+          <div id="history-conteinar">
+
+          </div>
+        </section>
+    </main>
+    <footer>
+        <!---<div class="bg-zinc-200 h-28">-->
+
+        </div>
+    </footer>
+    <script src="donet.js"></script>
+   <!--
+    <script src="blog.js"></script>
+    <script src="home.js"></script> 
+   -->
+
+
+
+
+   <!-- Open the modal using ID.showModal() method -->
+  
+
+<dialog id="my_modal_1" class="modal">
+  <div class="modal-box flex justify-center items-center gap-6 flex-col">
+    <h3 class="text-5xl font-extrabold text-center">Congrates!</h3>
+    <img src="/image/coin.png" alt="">
+    <p class="text-xl font-semibold">You Have Donated For Humankind</p>
+    <p class="text-4xl font-bold">Successfully</p>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button  class="btn">Close confirmation</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+</body>
+</html>
