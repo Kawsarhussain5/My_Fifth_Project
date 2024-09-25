@@ -24,9 +24,25 @@ document.getElementById('blog-btn')
         document.getElementById('history-section').classList.add('hidden');
     })
 
-     function btnHandel(event){
-     event.classList.add('bg-red-200');
-     }
+
+
+    //gggvvv
+    document.getElementById('donation-btn')
+    .addEventListener('click', function(){
+        //console.log('btn click')
+        document.getElementById('donation-btn').classList.add('bg-[#B4F461]');
+        document.getElementById('history-btn').classList.remove('bg-[#B4F461]');
+    })
+
+    document.getElementById('history-btn')
+    .addEventListener('click', function(){
+        //console.log('btn click')
+        document.getElementById('history-btn').classList.add('bg-[#B4F461]');
+        document.getElementById('donation-btn').classList.remove('bg-[#B4F461]');
+        
+    })
+    
+        
 
 
 
@@ -57,7 +73,7 @@ function getElementByIdvalue(id){
                 const div =document.createElement('div')
                 div.classList.add('bg-yellow-300')
                 div.innerHTML=`
-                <p class="text-xl font-semibold pl-5 py-5"> noakhali section donetion ${donetAmaunt} and total amaunt ${totalBalence}</p> 
+                <p class="text-xl font-semibold pl-5 py-5">${donetAmaunt} Donate for Flood at Noakhali, Bangladesh.And donatad TOtal Balance ${totalBalence}</p> 
                 <p class="text-xl font-semibold pl-5 py-5"> Donation Time ${currentTime} </P>
                 `
                    document.getElementById('history-conteinar').appendChild(div) 
@@ -85,7 +101,7 @@ function getElementByIdvalue(id){
             const div =document.createElement('div')
             div.classList.add('bg-green-300')
             div.innerHTML=`
-            <p class="text-xl font-semibold pl-5 py-5"> fani section donetion ${faniDonetAmaunt} and total amaunt ${faniTotalAmaunt}</p> 
+            <p class="text-xl font-semibold pl-5 py-5">${faniDonetAmaunt} Taka Donate for Flood Relief in Feni,Bangladesh .And donatad Total Balance ${faniTotalBalence}</p> 
             `
                document.getElementById('history-conteinar').appendChild(div) 
 
@@ -115,7 +131,7 @@ function getElementByIdvalue(id){
                 const div =document.createElement('div')
                 div.classList.add('bg-gray-300')
                 div.innerHTML=`
-                <p class="text-xl font-semibold pl-5 py-5"> fani section donetion ${quotaDonetAmaunt} and total amaunt ${quotaTotalBalence}</p> 
+                <p class="text-xl font-semibold pl-5 py-5">${quotaDonetAmaunt} Taka Aid for Injured in the Quota Movement.And donatad TOtal Balance  ${quotaTotalBalence}</p> 
                 `
                    document.getElementById('history-conteinar').appendChild(div) 
 
